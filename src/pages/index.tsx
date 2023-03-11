@@ -382,7 +382,7 @@ export default function Home() {
               For everyone.
             </div>
           </div>
-          <div className="xl:ml-32 w-80 h-80 relative shadow-xl overflow-hidden">
+          <div className="mt-6 lg:mt-0 xl:ml-32 w-80 h-80 relative shadow-xl overflow-hidden">
             <Image
               src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=1600"
               fill

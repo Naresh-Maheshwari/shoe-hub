@@ -50,7 +50,7 @@ const ShoppingSidebar = (): ReactElement => {
   return (
     <>
       {domLoaded && (
-        <div>
+        <div className="flex items-center">
           {/* cart icon */}
           <div className="flex flex-1 justify-end">
             <button onClick={toggleSideBar}>

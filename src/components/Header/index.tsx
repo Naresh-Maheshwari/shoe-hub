@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useCallback } from "react";
+import Icon from "~/src/components/Icon";
 import ShoppingSidebar from "~/src/components/ShoppingCart";
 
 const links = [
@@ -29,9 +30,12 @@ const Header = () => {
         <Link href="/" className="px-3 flex py-2 rounded">
           <p>Shoes Hub</p>
         </Link>
-        <button onClick={toggleNavigation} className="lg:hidden">
-          navigation_open
-        </button>
+        <div className="flex gap-4 lg:hidden">
+          <ShoppingSidebar />
+          <button onClick={toggleNavigation}>
+            <Icon icon="navigation" className="w-6 h-6" />
+          </button>
+        </div>
         <nav
           className={`absolute z-10 transition-all top-0 w-full min-h-screen bg-white mt-16 ${
             isOpen ? "left-[0] px-4" : "left-[-100%]"
@@ -55,7 +59,9 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <ShoppingSidebar />
+      <div className="hidden lg:block">
+        <ShoppingSidebar />
+      </div>
     </header>
   );
 };

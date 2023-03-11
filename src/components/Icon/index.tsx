@@ -5,6 +5,7 @@ import { ReactComponent as TikTokSvg } from "@/assets/tiktok.svg";
 import { ReactComponent as CloseSvg } from "@/assets/close.svg";
 import { ReactComponent as ShoppingCartSvg } from "@/assets/shoppingCart.svg";
 import { ReactComponent as DeleteSvg } from "@/assets/delete.svg";
+import { ReactComponent as NavigationSvg } from "@/assets/navigation.svg";
 
 /** Props Types for Svg Component */
 type IconSvgComponent = React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
@@ -17,6 +18,7 @@ type IconType = {
   close: IconSvgComponent;
   shoppingCart: IconSvgComponent;
   delete: IconSvgComponent;
+  navigation: IconSvgComponent;
 };
 
 export const ICON_MAP: IconType = {
@@ -27,6 +29,7 @@ export const ICON_MAP: IconType = {
   close: CloseSvg,
   shoppingCart: ShoppingCartSvg,
   delete: DeleteSvg,
+  navigation: NavigationSvg,
 };
 
 export type IconTypeProp =
@@ -36,7 +39,8 @@ export type IconTypeProp =
   | "tiktok"
   | "close"
   | "shoppingCart"
-  | "delete";
+  | "delete"
+  | "navigation";
 
 export type IconProps = {
   icon: IconTypeProp;

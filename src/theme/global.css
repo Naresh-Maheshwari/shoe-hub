@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// second fonts
+@font-face {
+  font-family: Montserrat;
+  src: url("../theme/Montserrat/Montserrat-Regular.ttf");
+  font-weight: 400;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../theme/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../theme/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../theme/Montserrat/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../theme/Montserrat/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../theme/Montserrat/Montserrat-Black.ttf");
+  font-weight: 900;
+  font-display: fallback;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.15;
+  overflow-x: hidden;
+  touch-action: auto;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+:where(a, button, input, select):focus {
+  outline: 2px solid #4285f4;
+}

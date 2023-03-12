@@ -20,6 +20,23 @@ export type ShoeProduct = {
 
 export const ProductData: ShoeProduct[] = [
   {
+    id: 21,
+    brand: "shoe clean",
+    model: "shoe-brush",
+    color: "",
+    size: "medium",
+    price: 15,
+    itemPrice: {
+      currency: "USD",
+      value: 15,
+      label: "15$",
+    },
+    name: "SHOE CLEANING BRUSH",
+    description: `The shoe cleaning brush are a timeless classic that has been a staple in many wardrobes for over 60 years. `,
+    image:
+      "https://images.unsplash.com/photo-1577467014696-4e9de06ee188?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+  },
+  {
     id: 1,
     name: "Nike Air Force 1 - White/Black",
     brand: "Nike",
@@ -373,7 +390,7 @@ export default function Home() {
               className="text-4xl md:text-6xl xl:text-8xl"
               aria-label="Helpful products. For everyone."
             >
-              Shoes Hub
+              Shoes Finery
             </h1>
             <div
               className="text-4xl md:text-6xl xl:text-8xl"

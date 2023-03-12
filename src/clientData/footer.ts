@@ -64,7 +64,7 @@ export const Footer = {
       sectionName: "Contact",
       sectionItems: [
         {
-          label: "company.shoehub@gmail.com",
+          label: "company.shoefinery@gmail.com",
           href: "#",
           textForm: "none",
         },

@@ -28,7 +28,7 @@ const Header = () => {
          lg:items-center lg:flex-row lg:justify-start"
       >
         <Link href="/" className="px-3 flex py-2 rounded">
-          <p>Shoes Hub</p>
+          <p>Shoe Finery</p>
         </Link>
         <div className="flex gap-4 lg:hidden">
           <ShoppingSidebar />

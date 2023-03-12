@@ -37,6 +37,23 @@ export const ProductData: ShoeProduct[] = [
       "https://images.unsplash.com/photo-1577467014696-4e9de06ee188?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   },
   {
+    id: 22,
+    brand: "shoe-finery",
+    model: "shoe crate",
+    color: "",
+    size: "medium",
+    price: 25,
+    itemPrice: {
+      currency: "USD",
+      value: 25,
+      label: "25$",
+    },
+    name: "STACK'EM SNEAKER CRATES | SHOE CRATES (SIDE DROP)",
+    description: `The shoe crates is a product to give good care to your shoes.`,
+    image:
+      "https://cdn.shopify.com/s/files/1/0581/7738/8736/products/2_3895331c-1fcc-4893-a48f-c35af4eaec11_720x.jpg?v=1676296232",
+  },
+  {
     id: 1,
     name: "Nike Air Force 1 - White/Black",
     brand: "Nike",
@@ -390,7 +407,7 @@ export default function Home() {
               className="text-4xl md:text-6xl xl:text-8xl"
               aria-label="Helpful products. For everyone."
             >
-              Shoes Finery
+              Shoe Finery
             </h1>
             <div
               className="text-4xl md:text-6xl xl:text-8xl"

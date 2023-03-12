@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { useState, useCallback } from "react";
+import { useRouter } from "next/router";
+import { useState, useCallback, useEffect } from "react";
 import Icon from "~/src/components/Icon";
 import ShoppingSidebar from "~/src/components/ShoppingCart";
 
@@ -12,10 +13,17 @@ const links = [
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   const toggleNavigation = useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", () => {
+      setIsOpen(false);
+    });
+  }, [router.events]);
 
   return (
     <header

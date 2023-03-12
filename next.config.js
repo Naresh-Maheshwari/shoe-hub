@@ -2,7 +2,12 @@
 const nextConfig = {
   images: {
     loader: "default",
-    domains: ["localhost", "images.pexels.com", "images.unsplash.com"],
+    domains: [
+      "localhost",
+      "images.pexels.com",
+      "images.unsplash.com",
+      "cdn.shopify.com",
+    ],
   },
   webpack: (config) => {
     config.module.rules.push({

@@ -30,7 +30,7 @@ const Footer: FC = () => {
       </ul>
       <div className="border-t border-solid border-[#dadce0]">
         <div className="py-5 px-4 text-center">
-          <span className="text-sm">{"@ copyright Shoes Hub Inc."}</span>
+          <span className="text-sm">{"@ copyright Shoe Finery Inc."}</span>
         </div>
       </div>
     </footer>

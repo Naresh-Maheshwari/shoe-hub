@@ -64,8 +64,13 @@ export const Footer = {
       sectionName: "Contact",
       sectionItems: [
         {
-          label: "company.shoefinery@gmail.com",
+          label: "Bharat Rathi",
           href: "#",
+          textForm: "none",
+        },
+        {
+          label: "78706-12345",
+          href: "tel:+917870612345",
           textForm: "none",
         },
       ],
